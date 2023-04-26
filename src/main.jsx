@@ -15,6 +15,7 @@ import cartProductsLoader from './Loaders/cartProductsLoader';
 import Checkout from './component/Checkout/Checkout';
 import SignUp from './component/SignUp/signUp';
 import AuthProviders from './component/Providers/AuthProviders';
+import PrivateRoute from './Routes/PrivateRoute';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,11 +32,11 @@ const router = createBrowserRouter([
       },
       {
         path: 'inventory',
-        element: <Inventory></Inventory>
+        element: <PrivateRoute><Inventory></Inventory></PrivateRoute>
       },
       {
         path: 'checkout',
-        element: <Checkout></Checkout>
+        element: <PrivateRoute><Checkout></Checkout></PrivateRoute>
       },
       {
         path: 'login',
