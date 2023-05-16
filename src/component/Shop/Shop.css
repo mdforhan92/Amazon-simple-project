@@ -25,3 +25,21 @@
 .proceed-link{
     text-decoration: none;
 }
+.pagination-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pagination .selected{
+    background-color: #FF9900;
+    
+
+}
